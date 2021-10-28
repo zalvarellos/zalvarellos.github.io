@@ -1,0 +1,18 @@
+.section-cards {
+    background-color: #dedfd9;
+    padding: 1em;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+@media (min-width: 1200px) {
+    .cards-container {
+        gap: 2em;
+    }
+}
+

@@ -37,13 +37,13 @@
                 NAV-BAR
 ********************************************/
 .nav-bar {
-    background-color: mediumturquoise;
+    background-color: rgb(3, 4, 94);
 
 
     &__nav-list {
         display: flex;
         list-style-type: none;
-        justify-content: center;
+        justify-content: space-around;
 
         @media (max-width: 768px) {
             & {
@@ -54,15 +54,15 @@
 
     &__nav-item {
         text-align: center;
-        background-color: pink;
     }
 
     &__nav-link {
         display: block;
-        background-color: purple;
+        background-color: rgb(2, 62, 138);
         color: white;
         padding: 1em 2em;
         text-decoration: none;
+        border-radius: 2em;
     }
 
     @media (max-width: 768px) {
@@ -83,7 +83,6 @@
 ********************************************/
 
 .search-bar {
-    background-color: olivedrab;
     display: flex;
     justify-content: space-between;
 
@@ -94,31 +93,42 @@
     }
 
     &__logo-container {
-        background-color: yellow;
+        background-color: rgb(0, 119, 182);
     }
 
     &__form-container {
-        background-color: gold;
+        background-color: rgb(0, 119, 182);
         flex-basis: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     &__form-label {
-        background-color: greenyellow;
+        background-color: rgb(0, 119, 182);
+        margin-right: 1em;
     }
 
     &__form-search {
-        background-color: deeppink;
-        width: 70%;
+        background-color: rgb(2, 102, 156);
+        text-align: left;
+        border: 2px solid grey;
+        border-radius: .5em;
     }
 
     &__form-submit {
-        background-color: darkslategray;
+        border: none;
+        background-color: rgb(0, 119, 182);
+        margin-left: 1em;
+        transition: .5s;
+    }
+    
+    &__form-submit:hover {
+        border: 1px solid grey;
+        transform: rotate(360deg);
     }
 
     &__carrito-container {
-        background-color: goldenrod;
+        background-color: rgb(0, 119, 182);
         flex: 0 0 3em;
     }
 }

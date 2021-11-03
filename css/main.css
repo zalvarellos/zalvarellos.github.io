@@ -115,12 +115,12 @@ body {
                 NAV-BAR
 ********************************************/
 .nav-bar {
-  background-color: mediumturquoise;
+  background-color: #03045e;
 }
 .nav-bar__nav-list {
   display: flex;
   list-style-type: none;
-  justify-content: center;
+  justify-content: space-around;
 }
 @media (max-width: 768px) {
   .nav-bar__nav-list {
@@ -129,14 +129,14 @@ body {
 }
 .nav-bar__nav-item {
   text-align: center;
-  background-color: pink;
 }
 .nav-bar__nav-link {
   display: block;
-  background-color: purple;
+  background-color: #023e8a;
   color: white;
   padding: 1em 2em;
   text-decoration: none;
+  border-radius: 2em;
 }
 @media (max-width: 768px) {
   .nav-bar {
@@ -152,7 +152,6 @@ body {
                 SEARCH BAR
 ********************************************/
 .search-bar {
-  background-color: olivedrab;
   display: flex;
   justify-content: space-between;
 }
@@ -160,26 +159,36 @@ body {
   padding: 1em;
 }
 .search-bar__logo-container {
-  background-color: yellow;
+  background-color: #0077b6;
 }
 .search-bar__form-container {
-  background-color: gold;
+  background-color: #0077b6;
   flex-basis: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .search-bar__form-label {
-  background-color: greenyellow;
+  background-color: #0077b6;
+  margin-right: 1em;
 }
 .search-bar__form-search {
-  background-color: deeppink;
-  width: 70%;
+  background-color: #02669c;
+  text-align: left;
+  border: 2px solid grey;
+  border-radius: 0.5em;
 }
 .search-bar__form-submit {
-  background-color: darkslategray;
+  border: none;
+  background-color: #0077b6;
+  margin-left: 1em;
+  transition: 0.5s;
+}
+.search-bar__form-submit:hover {
+  border: 1px solid grey;
+  transform: rotate(360deg);
 }
 .search-bar__carrito-container {
-  background-color: goldenrod;
+  background-color: #0077b6;
   flex: 0 0 3em;
 }
 
@@ -224,8 +233,10 @@ body {
 }
 
 .section-cards {
-  background-color: #dedfd9;
+  background-color: #48cae4;
   padding: 1em;
+  width: 100%;
+  height: 100%;
 }
 
 .cards-container {

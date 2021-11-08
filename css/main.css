@@ -118,9 +118,11 @@ body {
   background-color: #03045e;
 }
 .nav-bar__nav-list {
+  order: -1;
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: flex-start;
+  margin: 2em 0;
 }
 @media (max-width: 768px) {
   .nav-bar__nav-list {
@@ -132,11 +134,9 @@ body {
 }
 .nav-bar__nav-link {
   display: block;
-  background-color: #023e8a;
   color: white;
   padding: 1em 2em;
   text-decoration: none;
-  border-radius: 2em;
 }
 @media (max-width: 768px) {
   .nav-bar {
@@ -145,6 +145,9 @@ body {
   .nav-bar__nav-list {
     display: flex;
     flex-direction: column;
+  }
+  .nav-bar__nav-link {
+    background-color: #03045e;
   }
 }
 
@@ -159,37 +162,53 @@ body {
   padding: 1em;
 }
 .search-bar__logo-container {
-  background-color: #0077b6;
+  display: block;
+  background-color: white;
+  height: 2em;
 }
 .search-bar__form-container {
-  background-color: #0077b6;
+  background-color: #03045e;
   flex-basis: 100%;
   display: flex;
   justify-content: flex-start;
 }
 .search-bar__form-label {
-  background-color: #0077b6;
+  background-color: #03045e;
+  color: white;
   margin-right: 1em;
 }
+.search-bar__form-label:hover {
+  font-weight: bold;
+}
 .search-bar__form-search {
-  background-color: #02669c;
+  background-color: #14045e;
   text-align: left;
   border: 2px solid grey;
   border-radius: 0.5em;
+  width: 10%;
 }
 .search-bar__form-submit {
   border: none;
-  background-color: #0077b6;
+  background-color: #03045e;
   margin-left: 1em;
   transition: 0.5s;
 }
 .search-bar__form-submit:hover {
   border: 1px solid grey;
+  border-radius: 40%;
   transform: rotate(360deg);
 }
 .search-bar__carrito-container {
-  background-color: #0077b6;
+  background-color: #03045e;
   flex: 0 0 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 424px) {
+  .search-bar__form-search {
+    width: 100%;
+  }
 }
 
 /********************************************
@@ -233,7 +252,7 @@ body {
 }
 
 .section-cards {
-  background-color: #48cae4;
+  background-color: #849bff;
   padding: 1em;
   width: 100%;
   height: 100%;

@@ -41,9 +41,11 @@
 
 
     &__nav-list {
+        order: -1;
         display: flex;
         list-style-type: none;
-        justify-content: space-around;
+        justify-content: flex-start;
+        margin: 2em 0;
 
         @media (max-width: 768px) {
             & {
@@ -58,11 +60,9 @@
 
     &__nav-link {
         display: block;
-        background-color: rgb(2, 62, 138);
         color: white;
         padding: 1em 2em;
         text-decoration: none;
-        border-radius: 2em;
     }
 
     @media (max-width: 768px) {
@@ -74,6 +74,10 @@
                 display: flex;
                 flex-direction: column;
             }
+        }
+
+        &__nav-link {
+            background-color: rgb(3, 4, 94);
         }
     }
 }
@@ -93,43 +97,62 @@
     }
 
     &__logo-container {
-        background-color: rgb(0, 119, 182);
+        display: block;
+        background-color: rgb(255, 255, 255);
+        height: 2em;
     }
 
     &__form-container {
-        background-color: rgb(0, 119, 182);
+        background-color: rgb(3, 4, 94);
         flex-basis: 100%;
         display: flex;
         justify-content: flex-start;
     }
-
+    
     &__form-label {
-        background-color: rgb(0, 119, 182);
+        background-color: rgb(3, 4, 94);
+        color:rgb(255, 255, 255);
         margin-right: 1em;
     }
 
+    &__form-label:hover {
+        font-weight: bold;
+    }
+
     &__form-search {
-        background-color: rgb(2, 102, 156);
+        background-color: rgb(20, 4, 94);
         text-align: left;
         border: 2px solid grey;
         border-radius: .5em;
+        width: 10%;
     }
 
     &__form-submit {
         border: none;
-        background-color: rgb(0, 119, 182);
+        background-color: rgb(3, 4, 94);
         margin-left: 1em;
         transition: .5s;
     }
     
     &__form-submit:hover {
         border: 1px solid grey;
+        border-radius: 40%;
         transform: rotate(360deg);
     }
 
     &__carrito-container {
-        background-color: rgb(0, 119, 182);
+        background-color: rgb(3, 4, 94);
         flex: 0 0 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    @media (max-width: 424px) {
+        &__form-search {
+            width: 100%;
+        }
     }
 }
 /********************************************

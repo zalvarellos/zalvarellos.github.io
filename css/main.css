@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
 *,
 *::before,
 ::after {
@@ -13,6 +14,10 @@ body {
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+.form {
+  font-family: "Cairo", sans-serif;
 }
 
 .card {
@@ -84,6 +89,14 @@ body {
   }
 }
 
+.form-section {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 /********************************************
                 HEADER
 ********************************************/
@@ -145,6 +158,7 @@ body {
   .nav-bar__nav-list {
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
   .nav-bar__nav-link {
     background-color: #03045e;
@@ -158,19 +172,19 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.search-bar__logo-container, .search-bar__form-container {
-  padding: 1em;
-}
 .search-bar__logo-container {
-  display: block;
+  display: flex;
   background-color: white;
-  height: 2em;
+  border: 1px solid #03045e;
+  align-items: center;
+  padding: 0 1em;
 }
 .search-bar__form-container {
   background-color: #03045e;
   flex-basis: 100%;
   display: flex;
   justify-content: flex-start;
+  padding: 1em;
 }
 .search-bar__form-label {
   background-color: #03045e;
@@ -181,7 +195,8 @@ body {
   font-weight: bold;
 }
 .search-bar__form-search {
-  background-color: #14045e;
+  background-color: #372296;
+  color: aliceblue;
   text-align: left;
   border: 2px solid grey;
   border-radius: 0.5em;
@@ -205,7 +220,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 424px) {
+@media (max-width: 426px) {
   .search-bar__form-search {
     width: 100%;
   }
@@ -269,4 +284,9 @@ body {
   .cards-container {
     gap: 2em;
   }
+}
+.form {
+  background-color: #849bff;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */

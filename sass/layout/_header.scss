@@ -69,10 +69,11 @@
 
         & {
             display: none;
-        
+
             &__nav-list{
                 display: flex;
                 flex-direction: column;
+                margin: 0;
             }
         }
 
@@ -90,16 +91,12 @@
     display: flex;
     justify-content: space-between;
 
-
-    &__logo-container,
-    &__form-container {
-        padding: 1em;
-    }
-
     &__logo-container {
-        display: block;
+        display: flex;
         background-color: rgb(255, 255, 255);
-        height: 2em;
+        border: 1px solid rgb(3, 4, 94);
+        align-items: center;
+        padding: 0 1em;
     }
 
     &__form-container {
@@ -107,6 +104,7 @@
         flex-basis: 100%;
         display: flex;
         justify-content: flex-start;
+        padding: 1em;
     }
     
     &__form-label {
@@ -120,7 +118,8 @@
     }
 
     &__form-search {
-        background-color: rgb(20, 4, 94);
+        background-color: rgb(55, 34, 150);
+        color: aliceblue;
         text-align: left;
         border: 2px solid grey;
         border-radius: .5em;
@@ -149,7 +148,7 @@
     }
     
 
-    @media (max-width: 424px) {
+    @media (max-width: 426px) {
         &__form-search {
             width: 100%;
         }

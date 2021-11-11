@@ -1,7 +1,55 @@
+.form--center {
+    background-color: rgb(132, 155, 255);
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+
 .form-section {
     display: flex;
-    gap: 2em;
     flex-wrap: wrap;
+    flex: 5 5 5em;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-content: space-around;
+    gap: 1em;
+    padding: .5em;
+
+    &__info-input {
+        background-color: rgb(1, 26, 138);
+        color: #fff;
+    }
+
+    &__info--center {
+        text-align: center;
+    }
+
+}
+
+.form__title {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid grey;
+    border-radius: .5em;
+
+    &--center {
+        text-align: center;
+    }
+}
+
+.form-end {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+
+    &__button-submit, &__button-reset {
+        background-color: rgb(132, 155, 255);
+        padding: .5em;
+        border-radius: .2em;
+    }
 }

@@ -55,33 +55,33 @@
     <main>
         <!-- nombre, precio, stock, marca, categoría, imagen, detalles, envio_sin_cargo -->
         <form action="alta.html" method="post" enctype="multipart/form-data">
-            <fieldset class="form">
+            <fieldset class="form form--center">
                 
                 <legend class="form__title">Alta de Producto</legend>
                 
                 <div class="form-section">
                     <div class="form-section__info">
-                        <label for="nombre" class="personal">Nombre:* </label>
-                        <input id="nombre" type="text" name="nombre" required autofocus >
+                        <label for="nombre">Nombre:* </label>
+                        <input class="form-section__info-input" id="nombre" type="text" name="nombre" required autofocus >
                     </div>
         
                     <div class="form-section__info">
-                        <label for="precio" class="personal">Precio:* </label>
-                        <input type="number" id="precio" name="precio" required>
+                        <label for="precio">Precio:* </label>
+                        <input class="form-section__info-input" type="number" id="precio" name="precio" required>
                     </div>
                                         
                     <div class="form-section__info">
-                        <label for="stock" class="personal">Stock:* </label>
-                        <input type="number" id="stock" name="stock" required>
+                        <label for="stock">Stock:* </label>
+                        <input class="form-section__info-input" type="number" id="stock" name="stock" required>
                     </div>
                     
                     <div class="form-section__info">
-                        <label for="marca" class="personal">Marca:* </label>
-                        <input type="text" id="marca" name="marca" required>
+                        <label for="marca">Marca:* </label>
+                        <input class="form-section__info-input" type="text" id="marca" name="marca" required>
                     </div>
 
                     <div class="form-section__info">
-                        <label for="categoría" class="personal">Categoría:* </label>
+                        <label for="categoría">Categoría:* </label>
                         <select name="categoría" id="categoría" required>
                             <option value="">- Seleccionar -</option>
                             <option value="celulares">Celulares</option>
@@ -93,19 +93,21 @@
                     </div>
     
                     <div class="form-section__info">
-                        <label for="foto">Agregar foto del producto:</label>
-                        <input name="imagen" id="imagen" type="file" value="Seleccionar Foto" required>
+                        <label for="foto">Agregar foto del producto:*</label>
+                        <input name="foto" id="foto" type="file" accept="image/*" required multiple>
                     </div>
 
                     <div class="form-section__info">
-                        <label for="detalles" class="personal">Detalles del producto...</label>
-                        <textarea name="detalles" id="detalles" class="ingreso-de-datos"></textarea>
+                        <label for="detalles">Detalles del producto...</label>
+                        <textarea name="detalles" id="detalles" class="form-section__info-input" maxlength="150"></textarea>
                     </div>
 
                     <div class="form-section__info">
-                        <input type="checkbox" id="envio" name="envio" value="si">
+                        <input class="form-section__info-input" type="checkbox" id="envio" name="envio" value="si">
                         <label for="envio">Envío sin cargo</label>
                     </div>
+
+                    <p class="form__advice">(*) campo obligatorio</p>
                 </div>
 
             </fieldset>

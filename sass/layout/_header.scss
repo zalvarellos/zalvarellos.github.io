@@ -16,6 +16,7 @@
 
 .section-cards__header {
     margin-bottom: 1em;
+    color: #ddd;
 }
 
 #menu {
@@ -93,7 +94,7 @@
 
     &__logo-container {
         display: flex;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(3, 4, 94);
         border: 1px solid rgb(3, 4, 94);
         align-items: center;
         padding: 0 1em;

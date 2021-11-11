@@ -20,6 +20,26 @@ body {
   font-family: "Cairo", sans-serif;
 }
 
+.main__header {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+}
+
+body {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#011a8a+21,7db9e8+61,e3e4e5+92 */
+  background: #011a8a;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #011a8a 21%, #7db9e8 61%, #e3e4e5 92%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#011a8a", endColorstr="#e3e4e5",GradientType=0 );
+  /* IE6-9 */
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  margin-bottom: 30%;
+}
+
 .card {
   color: #7fbaf1;
   width: 220px;
@@ -89,12 +109,54 @@ body {
   }
 }
 
+.form--center {
+  background-color: #849bff;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  margin-top: 1em;
+}
+
 .form-section {
   display: flex;
-  gap: 2em;
   flex-wrap: wrap;
+  flex: 5 5 5em;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-content: space-around;
+  gap: 1em;
+  padding: 0.5em;
+}
+.form-section__info-input {
+  background-color: #011a8a;
+  color: #fff;
+}
+.form-section__info--center {
+  text-align: center;
+}
+
+.form__title {
+  background-color: black;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid grey;
+  border-radius: 0.5em;
+}
+.form__title--center {
+  text-align: center;
+}
+
+.form-end {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+.form-end__button-submit, .form-end__button-reset {
+  background-color: #849bff;
+  padding: 0.5em;
+  border-radius: 0.2em;
 }
 
 /********************************************
@@ -112,6 +174,7 @@ body {
 
 .section-cards__header {
   margin-bottom: 1em;
+  color: #ddd;
 }
 
 #menu {
@@ -174,7 +237,7 @@ body {
 }
 .search-bar__logo-container {
   display: flex;
-  background-color: white;
+  background-color: #03045e;
   border: 1px solid #03045e;
   align-items: center;
   padding: 0 1em;
@@ -267,7 +330,6 @@ body {
 }
 
 .section-cards {
-  background-color: #849bff;
   padding: 1em;
   width: 100%;
   height: 100%;
@@ -285,8 +347,7 @@ body {
     gap: 2em;
   }
 }
-.form {
-  background-color: #849bff;
-  width: 100%;
-  height: 100%;
+.main__title {
+  color: #ddd;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

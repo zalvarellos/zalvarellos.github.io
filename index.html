@@ -16,16 +16,16 @@
         <nav class="nav-bar">
             <ul class="nav-bar__nav-list">
                 <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                    <a class="nav-bar__nav-link" href="" id="inicio">Inicio</a>
                 </li>
                 <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                    <a class="nav-bar__nav-link" href="" id="alta">Alta</a>
                 </li>
                 <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                    <a class="nav-bar__nav-link" href="" id="contacto">Contacto</a>
                 </li>
                 <li class="nav-bar__nav-item">
-                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-bar__nav-link" href="" id="nosotros">Nosotros</a>
                 </li>
             </ul>
         </nav>
@@ -50,85 +50,14 @@
             </div>
         </div>
     </header>
+
+    <!-- Zona de menú modal del carrito -->
+    <div class="section-carrito"></div>
+
     <main>
-        <section class="section-cards">
-            <header class="section-cards__header">
-                <h1>Los mejores productos para vos!</h1>
-                <p>Se encontraron x productos</p>
-            </header>
-
-            <div class="cards-container">
-                <div class="card">
-                    <article class="card__article">
-                        <div class="card__image-container">
-                            <img class="card__image" src="img/productos/iPhone_SE_05.jpg" alt="iPhone_SE">
-                        </div>
-                        <div class="card__content">
-                            <h2 class="card__heading">iPhone_SE</h2>
-                            <div class="card__description">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, delectus?</p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                
-                <div class="card">
-                    <article class="card__article">
-                        <div class="card__image-container">
-                            <img class="card__image" src="img/productos/auriculares-sony.jpg" alt="auriculares sony">
-                        </div>
-                        <div class="card__content">
-                            <h2 class="card__heading">Auriculates Sony</h2>
-                            <div class="card__description">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, delectus?</p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                
-                <div class="card">
-                    <article class="card__article">
-                        <div class="card__image-container">
-                            <img class="card__image" src="img/productos/notebook-samsungjpg.jpg" alt="Notebook-samsung">
-                        </div>
-                        <div class="card__content">
-                            <h2 class="card__heading">Notebook Samsung</h2>
-                            <div class="card__description">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, delectus?</p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                
-                <div class="card">
-                    <article class="card__article">
-                        <div class="card__image-container">
-                            <img class="card__image" src="img/productos/reloj.jpg" alt="smart-watch">
-                        </div>
-                        <div class="card__content">
-                            <h2 class="card__heading">Smart Watch</h2>
-                            <div class="card__description">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, delectus?</p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="card">
-                    <article class="card__article">
-                        <div class="card__image-container">
-                            <img class="card__image" src="img/productos/iPhone_SE_05.jpg" alt="iPhone_SE">
-                        </div>
-                        <div class="card__content">
-                            <h2 class="card__heading">iPhone_SE</h2>
-                            <div class="card__description">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, delectus?</p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+        
+        <!-- zona de inyección de SPA de plantillas -->
+        
     </main>
     <footer class="main-footer">
         <div class="footer-bar">
@@ -146,5 +75,36 @@
             </ul>
         </div>
     </footer>
+
+    <!-- ---------------------------------------------------------------- -->
+    <!-- -----------              SCRIPTS                      ---------- -->
+    <!-- ---------------------------------------------------------------- -->
+    <!-- librerías -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- script clientes -->
+    <script src="js/clientes/http.js"></script>
+
+    <!-- scrpt servicios -->
+    <script src="js/servicios/productos.js"></script>
+    <script src="js/servicios/carrito.js"></script>
+
+    <!-- script modelos -->
+    <script src="js/modelos/productos.js"></script>
+    <script src="js/modelos/carrito.js"></script>
+
+    <!-- script controladores -->
+    <script src="js/controladores/productos.js"></script>
+    <script src="js/controladores/carrito.js"></script>
+
+    <!-- scripts de plantillas -->
+    <script src="js/menu/inicio.js"></script>
+    <script src="js/menu/alta.js"></script>
+    <script src="js/menu/contacto.js"></script>
+    <script src="js/menu/nosotros.js"></script>
+    <script src="js/menu/carrito.js"></script>
+
+    <!-- script de arranque -->
+    <script src="js/main.js"></script>
 </body>
 </html>

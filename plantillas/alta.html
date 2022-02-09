@@ -1,0 +1,77 @@
+<!-- nombre, precio, stock, marca, categoría, imagen, detalles, envio_sin_cargo -->
+<form class="main-form" action="alta.html" method="post" enctype="multipart/form-data" autocomplete="off">
+    <fieldset class="form form--center">
+
+        <legend class="form__title">Alta de Producto</legend>
+
+        <div class="form-section">
+            <div class="form-section__info">
+                <label for="nombre">Nombre:* </label>
+                <input class="form-section__info-input" id="nombre" type="text" name="nombre">
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="form-section__info">
+                <label for="precio">Precio:* </label>
+                <input class="form-section__info-input" type="text" id="precio" name="precio">
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="form-section__info">
+                <label for="stock">Stock:* </label>
+                <input class="form-section__info-input" type="text" id="stock" name="stock">
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="form-section__info">
+                <label for="marca">Marca:* </label>
+                <input class="form-section__info-input" type="text" id="marca" name="marca">
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="form-section__info">
+                <label for="categoría">Categoría:* </label>
+                <select name="categoría" id="categoría" class=".form-section__info-input">
+                    <option value="">- Seleccionar -</option>
+                    <option value="celulares">Celulares</option>
+                    <option value="auriculares">Auriculares</option>
+                    <option value="computadoras">Computadoras</option>
+                    <option value="accesorios">Accesorios</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="form-section__info">
+                <label for="foto">Agregar foto del producto:*</label>
+                <input class="form-section__info-input" name="foto" id="foto" type="text"> <!-- type="file" accept="image/*" multiple -->
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="form-section__info">
+                <label for="detalles">Detalles del producto...</label>
+                <textarea name="detalles" id="detalles" class="form-section__info-input" maxlength="150"></textarea>
+                <div class="error-detail"></div>
+            </div>
+
+            <div class="form-section__info">
+                <input class="form-section__info-input" type="checkbox" id="envio" name="envio">
+                <label for="envio">Envío sin cargo</label>
+                <div class="error-detail"></div>
+            </div>
+
+            <p class="form__advice">(*) campo obligatorio</p>
+        </div>
+
+    </fieldset>
+
+
+    <div class="form-end">
+        <button class="form-end__button-submit" type="submit">Agregar Producto</button>
+    </div>
+
+</form>
+
+<h2>Lista de productos disponibles</h2>
+
+<div class="listado-productos"></div>

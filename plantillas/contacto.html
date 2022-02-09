@@ -1,0 +1,35 @@
+<h1 class="main__title">Consultas? brindanos tus datos y te contactamos!</h1>
+
+<!-- nombre, e-mail y comentarios. -->
+<form action="contacto.html" method="post" enctype="multipart/form-data">
+    <fieldset class="form form--center">
+        <legend class="form__title form__title--center">
+            Datos de contacto
+        </legend>
+
+        <div class="form-section">
+            <div class="form-section__info form-section__info--center">
+                <label for="nombre">Nombre: </label>
+                <input class="form-section__info-input" type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-section__info form-section__info--center">
+                <label for="email">Email: </label>
+                <input class="form-section__info-input" type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-section__info form-section__info--center">
+                <label for="comentarios">Comentarios</label>
+                <textarea name="detalles" id="detalles" class="form-section__info-input" maxlength="150"></textarea>
+            </div>
+
+            <p class="form__advice">(*) campo obligatorio</p>
+        </div>
+    </fieldset>
+
+    <div class="form-end">
+        <input class="form-end__button-submit" type="submit" value="Enviar comentarios">
+        <input class="form-end__button-reset" type="reset" value="Restablecer">
+    </div>
+
+</form>

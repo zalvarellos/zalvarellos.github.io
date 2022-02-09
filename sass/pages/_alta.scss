@@ -1,0 +1,42 @@
+.error-detail {
+    background-color: hsl(0, 100%, 90%);
+    color: hsl(0, 100%, 30%);
+    font-weight: bold;
+    padding: .25em .5em;
+    border-bottom-left-radius: .2em;
+    border-bottom-right-radius: .2em;
+}
+
+.error-detail:empty {
+    padding: 0;
+}
+
+.form-section {
+    
+    
+    @media (min-width: 426px) {
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    @media (min-width: 768px) {
+        padding: 2em;
+        width: 90%;
+        margin: 2em auto;
+    }
+}
+
+table, th ,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+table, h2, h3 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 5px;
+}

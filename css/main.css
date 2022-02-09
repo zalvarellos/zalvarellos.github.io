@@ -58,6 +58,7 @@ body {
   transition: all 0.2s;
   background-color: rgba(37, 2, 163, 0.8);
   text-decoration: none;
+  cursor: pointer;
 }
 .card__image-container {
   height: 200px;
@@ -69,8 +70,9 @@ body {
 .card__image {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 0.2s;
 }
 .card__content {
   padding: 1em;
@@ -111,6 +113,10 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
   }
+}
+
+.active {
+  font-weight: bold;
 }
 
 .form--center {
@@ -286,6 +292,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 @media (max-width: 426px) {
   .search-bar__form-search {
@@ -335,7 +342,8 @@ body {
 }
 
 .footer-bar {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   left: 0px;
   height: 50px;
   border-radius: 3px;
@@ -354,8 +362,8 @@ body {
   margin: 0;
   width: 50px;
   height: 50px;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  bottom: 0;
   left: 0;
 }
 .footer-bar__toggle:checked ~ ul {
@@ -363,18 +371,27 @@ body {
   background-position: 0px -50px;
 }
 .footer-bar__toggle:checked .footer-bar__list {
-  background-image: url("../../img/toggle-icon2.png");
-}
-.footer-bar__list {
   margin: 0;
   padding: 0 0 0 50px;
   height: 50px;
   width: 10px;
   transition: 0.5s width ease;
-  background-image: url("../../img/smedia_icon.png");
+  background-image: url("../img/toggle-icon2.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-position: 2px 2px;
+  background-position: 10px 15px;
+}
+.footer-bar__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 50px;
+  height: 50px;
+  width: 10px;
+  transition: 1s width ease;
+  background-image: url("../../img/toggle-icon1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: 10px 15px;
 }
 .footer-bar__item {
   display: inline-block;
@@ -410,6 +427,47 @@ body {
     gap: 2em;
   }
 }
+.error-detail {
+  background-color: #ffcccc;
+  color: #990000;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  border-bottom-left-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+}
+
+.error-detail:empty {
+  padding: 0;
+}
+
+@media (min-width: 426px) {
+  .form-section {
+    width: 90%;
+    margin: 1em auto;
+  }
+}
+@media (min-width: 768px) {
+  .form-section {
+    padding: 2em;
+    width: 90%;
+    margin: 2em auto;
+  }
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table, h2, h3 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 5px;
+}
+
 .main__title {
   color: #ddd;
   text-align: center;
@@ -435,4 +493,39 @@ body {
   padding: 5%;
   border-radius: 1em;
   text-shadow: -1px -1px 3px #696969, 2px 2px 4px #444343;
+}
+
+.section-carrito {
+  padding: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: auto;
+  display: none;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  top: 150px;
+  left: 150px;
+  right: 150px;
+  bottom: 150px;
+  box-shadow: 0.3em 0.3em 10em 0.3em black;
+}
+.section-carrito--visible {
+  display: block;
+}
+
+table {
+  padding: 2em;
+  margin: 0 auto;
+}
+
+button.btn__enviarCarrito {
+  float: right;
+  margin: 15px;
+  width: 100px;
+  height: 35px;
+  font-size: 1.1em;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
